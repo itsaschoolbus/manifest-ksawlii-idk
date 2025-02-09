@@ -20,15 +20,10 @@
 
   <!-- mediatek stuff -->
   <project path="hardware/mediatek" name="LineageOS/android_hardware_mediatek" remote="ghh" revision="lineage-22.1"/>
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="ksawlii" revision="miku-15"/>
-
-  <!-- sign -->
-  <project path="vendor/signkeys-temp" name="android-build-signed-script" remote="ksawlii" revision="main">
-    <linkfile src="aosp-create-signed-env.sh" dest="sign.sh"/>
-  </project>
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="ksawlii" revision="aosp-15"/>
 
   <!-- merlinx -->
   <project path="vendor/xiaomi/merlinx" name="Jbub5/proprietary_vendor_xiaomi_merlinx" remote="ghh" revision="15"/>
-  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="ksawlii"/>
+  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="ksawlii" revision="lineage-22.1"/>
 
 </manifest>
